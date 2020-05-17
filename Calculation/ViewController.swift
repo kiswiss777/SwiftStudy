@@ -86,28 +86,26 @@ class ViewController: UIViewController {
         inputNumber.text = String(number);
     }
     
-    @IBAction func bnDivision(_ sender: Any) {
-        m_firstValue = GetDouble(from:inputNumber);
-        m_lastEquation = .devision;
-        SetFlag(clearFlag : true ,dotFlag:  false);
-    }
-    
-    @IBAction func bnMulti(_ sender: Any) {
-        m_firstValue = GetDouble(from:inputNumber);
-        m_lastEquation = .multi;
-        SetFlag(clearFlag : true ,dotFlag:  false);
-    }
-    
-    @IBAction func bnSubstract(_ sender: Any) {
-        m_firstValue = GetDouble(from:inputNumber);
-        m_lastEquation = .substract;
-        SetFlag(clearFlag : true ,dotFlag:  false);
-    }
-    
-    @IBAction func bnAdd(_ sender: Any) {
-        m_firstValue = GetDouble(from:inputNumber);
-        m_lastEquation = .add;
-        SetFlag(clearFlag : true ,dotFlag:  false);
+    @IBAction func bnEquation(sender : UIButton)
+    {
+        m_firstValue = GetDouble(from: inputNumber);
+        switch sender.tag {
+        case 1:
+            m_lastEquation = .devision;
+            break;
+        case 2:
+            m_lastEquation = .multi;
+            break;
+        case 3:
+            m_lastEquation = .substract;
+            break;
+        case 4:
+            m_lastEquation = .add;
+            break;
+        default:
+            break;
+        }
+        SetFlag(clearFlag: true, dotFlag: false);
     }
     
     @IBAction func bnResult(_ sender: Any) {
@@ -128,7 +126,9 @@ class ViewController: UIViewController {
             break;
         }
         inputNumber.text = String(m_result);
-       SetFlag(clearFlag : true ,dotFlag:  false);
+        SetFlag(clearFlag : true ,dotFlag:  false);
+        
+        let alert = UIAlertController(title: "Answer", message: ("Answer:: " + String(m_result)), preferredStyle: UIAlertController.Style.alert);
     }
     
     @IBAction func bnDot(_ sender: Any) {

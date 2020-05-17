@@ -42,15 +42,6 @@
                                     <action selector="bnPercentage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUl-3W-teH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tz-4s-dXh">
-                                <rect key="frame" x="299" y="308" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="/"/>
-                                <connections>
-                                    <action selector="bnDivision:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWt-NH-6Go"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxM-CW-Tuc" customClass="NumberButton" customModule="Calculation" customModuleProvider="target">
                                 <rect key="frame" x="35" y="396" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -93,13 +84,13 @@
                                     <action selector="NumberButtonManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OX1-9h-jbn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqM-ix-lN3">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqM-ix-lN3">
                                 <rect key="frame" x="299" y="396" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="*"/>
                                 <connections>
-                                    <action selector="bnMulti:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6H-NH-yMB"/>
+                                    <action selector="bnEquationWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cA-Zj-V9b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pm7-xv-oeU" customClass="NumberButton" customModule="Calculation" customModuleProvider="target">
@@ -144,13 +135,13 @@
                                     <action selector="NumberButtonManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CH7-Yn-WeY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KM-Hk-9hk">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KM-Hk-9hk">
                                 <rect key="frame" x="299" y="484" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="bnSubstract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q1Y-DU-SpO"/>
+                                    <action selector="bnEquationWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hkd-Ai-vL0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UV-4w-F8x" customClass="NumberButton" customModule="Calculation" customModuleProvider="target">
@@ -195,13 +186,13 @@
                                     <action selector="NumberButtonManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RfT-sO-kEM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DX-Ic-DXQ">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DX-Ic-DXQ">
                                 <rect key="frame" x="299" y="572" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="bnAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rBU-gg-y5Z"/>
+                                    <action selector="bnEquationWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0B-5b-SBp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIh-Qz-rsv" customClass="NumberButton" customModule="Calculation" customModuleProvider="target">
@@ -250,6 +241,15 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tz-4s-dXh">
+                                <rect key="frame" x="299" y="308" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="/"/>
+                                <connections>
+                                    <action selector="bnEquationWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKm-VY-YvC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
